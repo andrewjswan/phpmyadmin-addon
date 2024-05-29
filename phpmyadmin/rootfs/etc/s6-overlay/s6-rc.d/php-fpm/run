@@ -1,0 +1,37 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Home Assistant Community Add-on: phpMyAdmin
+# Runs the PHP-FPM daemon
+# ==============================================================================
+bashio::log.info "Starting PHP-FPM..."
+
+export SERVICE_HOST
+export SERVICE_PASSWORD
+export SERVICE_PORT
+export SERVICE_USERNAME
+export UPLOAD_LIMIT=64M
+
+
+if bashio::config.has_value 'host' ; then
+  SERVICE_HOST=$(bashio::config 'host')
+  if bashio::config.has_value 'port' ; then
+    SERVICE_PORT=$(bashio::config 'port')
+  else
+    SERVICE_PORT=3306
+  fi
+  SERVICE_USERNAME=$(bashio::config 'username')
+  SERVICE_PASSWORD=$(bashio::config 'password')
+else
+  SERVICE_HOST=$(bashio::services "mysql" "host")
+  SERVICE_PORT=$(bashio::services "mysql" "port")
+  SERVICE_USERNAME=$(bashio::services "mysql" "username")
+  SERVICE_PASSWORD=$(bashio::services "mysql" "password")
+fi
+
+
+if bashio::config.has_value 'upload_limit' ; then
+    UPLOAD_LIMIT=$(bashio::config 'upload_limit')M
+fi
+
+exec php-fpm81 --nodaemonize
