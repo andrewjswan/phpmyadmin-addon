@@ -107,4 +107,4 @@ SOFTWARE.
 [andrewjswan]: https://github.com/andrewjswan
 [issue]: https://github.com/andrewjswan/phpmyadmin-addon/issues
 [frenck]: https://github.com/frenck
-[phpmyadmin]: https://github.com/hassio-addons/phpmyadmin-addon
+[phpmyadmin]: https://github.com/hassio-addons/addon-phpmyadmin

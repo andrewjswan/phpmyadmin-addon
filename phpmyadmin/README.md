@@ -38,4 +38,4 @@ Addon based on offical [Home Assistant Community Add-on: phpMyAdmin][phpmyadmin]
 [i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [screenshot]: https://raw.githubusercontent.com/hassio-addons/addon-phpmyadmin/main/images/screenshot.png
 [frenck]: https://github.com/frenck
-[phpmyadmin]: https://github.com/hassio-addons/phpmyadmin-addon
+[phpmyadmin]: https://github.com/hassio-addons/addon-phpmyadmin
