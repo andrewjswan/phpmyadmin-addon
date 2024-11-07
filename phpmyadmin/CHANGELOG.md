@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024.11.1 - 2024-11-07
+
+- Add Docker images
+
 ## 2024.10.1 - 2024-10-31
 
 - Update to phpMyAdmin v0.10.0
