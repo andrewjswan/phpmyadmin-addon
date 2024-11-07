@@ -31,3 +31,9 @@ LABEL \
     org.opencontainers.image.created=${BUILD_DATE} \
     org.opencontainers.image.revision=${BUILD_REF} \
     org.opencontainers.image.version=${BUILD_VERSION}
+
+WORKDIR /
+
+# Make scripts executable
+RUN chmod a+x $(find "./" -type f -iname "*.sh")
+RUN chmod a+x $(find "./etc/s6-overlay/s6-rc.d" -type f -iname "*")
