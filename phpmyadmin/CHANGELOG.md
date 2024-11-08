@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024.11.7 - 2024-11-08
+
+- Publication in the general repository
+
 ## 2024.11.5 - 2024-11-07
 
 - Add Docker images
