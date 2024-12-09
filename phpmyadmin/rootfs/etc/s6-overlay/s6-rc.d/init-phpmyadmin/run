@@ -35,7 +35,7 @@ else
 fi
 
 database=$(\
-    mysql \
+    mariadb \
         -u "${username}" -p"${password}" \
         -h "${host}" -P "${port}" \
         --skip-column-names \
@@ -44,7 +44,7 @@ database=$(\
 
 if ! bashio::var.has_value "${database}"; then
     bashio::log.info "Creating database for phpMyAdmin"
-    mysql \
+    mariadb \
         -u "${username}" -p"${password}" \
         -h "${host}" -P "${port}" \
             < /var/www/phpmyadmin/sql/create_tables.sql
