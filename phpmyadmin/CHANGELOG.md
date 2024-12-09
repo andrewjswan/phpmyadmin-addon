@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024.12.1 - 2024-10-31
+
+- Update to phpMyAdmin v0.11.0
+
 ## 2024.11.7 - 2024-11-08
 
 - Publication in the general repository
