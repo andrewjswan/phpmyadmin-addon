@@ -39,6 +39,7 @@ database=$(\
         -u "${username}" -p"${password}" \
         -h "${host}" -P "${port}" \
         --skip-column-names \
+        --skip-ssl \
         -e "SHOW DATABASES LIKE 'phpmyadmin';"
 )
 
@@ -47,5 +48,6 @@ if ! bashio::var.has_value "${database}"; then
     mariadb \
         -u "${username}" -p"${password}" \
         -h "${host}" -P "${port}" \
+        --skip-ssl \
             < /var/www/phpmyadmin/sql/create_tables.sql
 fi
