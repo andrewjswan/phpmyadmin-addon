@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026.6.1 - 2025-06-30
+
+- Update to phpMyAdmin v0.12.0
+
 ## 2024.12.1 - 2024-10-31
 
 - Update to phpMyAdmin v0.11.0
