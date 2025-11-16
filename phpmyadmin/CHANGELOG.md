@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.11.1 - 2025-11-16
+
+- Remove deprecated `codenotary` fields
+- Remove `armv7` support
+
 ## 2026.6.1 - 2025-06-30
 
 - Update to phpMyAdmin v0.12.0
