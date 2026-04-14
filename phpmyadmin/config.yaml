@@ -1,6 +1,6 @@
 ---
 name: phpMyAdmin
-version: 2025.11.1
+version: 2026.4.1
 slug: phpmyadmin
 description: A web interface for the MariaDB / MySQL
 url: https://github.com/andrewjswan/phpmyadmin-addon
@@ -9,7 +9,7 @@ arch:
   - aarch64
   - amd64
 
-image: ghcr.io/andrewjswan/phpmyadmin-addon-{arch}
+image: ghcr.io/andrewjswan/phpmyadmin-addon
 
 ingress: true
 ingress_stream: true
