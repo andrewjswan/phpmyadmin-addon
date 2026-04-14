@@ -6,7 +6,7 @@
 
 [![ha app_badge](https://img.shields.io/badge/HA-App-blue.svg)](https://developers.home-assistant.io/docs/add-ons)
 [![phpmyadmin](https://img.shields.io/badge/phpMy-Admin-blue.svg)](https://github.com/andrewjswan/phpmyadmin-addon/)
-[![GitHub](https://img.shields.io/github/license/andrewjswan/phpmyadmin-addon?color=blue)](https://github.com/andrewjswan/phpmyadmin-addon/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/license/andrewjswan/phpmyadmin-addon?color=blue)](https://github.com/andrewjswan/phpmyadmin-addon/blob/main/LICENSE)
 [![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/andrewjswan/phpmyadmin-addon?include_prereleases)](https://github.com/andrewjswan/phpmyadmin-addon/blob/main/phpmyadmin/CHANGELOG.md)
 [![StandWithUkraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
 

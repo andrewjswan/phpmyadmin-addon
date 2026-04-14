@@ -3,7 +3,7 @@ name: phpMyAdmin / App
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 permissions:
