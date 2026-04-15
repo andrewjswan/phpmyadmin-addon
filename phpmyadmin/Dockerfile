@@ -1,12 +1,5 @@
-# Build arguments
+# Build Arch
 ARG BUILD_ARCH
-ARG BUILD_DATE
-ARG BUILD_DESCRIPTION
-ARG BUILD_NAME
-ARG BUILD_REF
-ARG BUILD_REPOSITORY
-ARG BUILD_VERSION
-
 ARG BUILD_FROM=ghcr.io/hassio-addons/phpmyadmin/${BUILD_ARCH}:stable
 FROM ${BUILD_FROM}
 
@@ -17,6 +10,15 @@ RUN echo "Docker builder running on $BUILDPLATFORM, building for $TARGETPLATFORM
 
 # Copy root filesystem
 COPY rootfs /
+
+# Build arguments
+ARG BUILD_ARCH
+ARG BUILD_DATE
+ARG BUILD_DESCRIPTION
+ARG BUILD_NAME
+ARG BUILD_REF
+ARG BUILD_REPOSITORY
+ARG BUILD_VERSION
 
 # Labels
 LABEL \
