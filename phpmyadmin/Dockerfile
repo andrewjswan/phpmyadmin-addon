@@ -1,5 +1,5 @@
 # Build Arch
-ARG BUILD_ARCH
+ARG BUILD_ARCH=amd64
 ARG BUILD_FROM=ghcr.io/hassio-addons/phpmyadmin/${BUILD_ARCH}:stable
 FROM ${BUILD_FROM}
 
